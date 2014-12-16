@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>NYC Residential Construction, 2000-2014</title>
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/skeleton.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel=
+	"stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel=
+	"stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header class="sixteen columns">
+			Residential Construction Across NYC, 2000-2014
+		</header>
+
+		<div id="map"></div>
+
+		<div class="eight columns">
+			<subheader class= "subheader">
+			About the map
+			</subheader>
+			<p>Many U.S. cities have experienced a rebirth over the past
+			decade, as young professionals and families increasingly choose to
+			reside in urban environments over suburban communities. New York
+			City is no exception to this trend; since 2000, the city has added
+			nearly 400,000 residents, spread across all five boroughs.</p>
+		</div>
+
+		<div class="eight columns">
+			<p>This map provides a glimpse of where new residential
+			construction is occurring across the city to accomodate the surge of
+			city dwellers. Specifically, it identifies which neighborhoods have
+			constructed the most new residential units since 2000. It is
+			important to keep in mind that the numbers do not represent net
+			change; rather, they only represent the aggregate number of newly
+			constructed residential units, regardless of whether new units
+			simply replaced older ones. All residential data was obtained from
+			the NYC Planning Department's MapPLUTO database.</p>
+		</div>
+
+		<div class="line">
+			<hr>
+		</div>
+
+		<div class="eight columns"><img src=
+		"http://images.fineartamerica.com/images-medium-large-5/manhattan-black-and-white-mountain-dreams.jpg"></div>
+
+		<div class="eight columns">
+			<subheader class= "subheader1">
+			Manhattan
+			</subheader>
+			<p>Manhattan has constructed the most residential units of any
+			borough since 2000 (81,518). The west side neighborhoods of Hudson
+			Yards-Chelsea-Flatiron-Union Square and Clinton constructed more
+			residential units than any other neighborhood in the city (14,679
+			and 12,359 units, respectively). Much of this growth has been
+			triggered by the completion of new open spaces such as the High
+			Line and Hudson River Park. Rounding out the top five were Battery
+			Park City-Lower Manhattan (5,933), Midtown-Midtown South (5,629),
+			and Lincoln Square (4,981).</p>
+		</div>
+
+		<div class="sixteen columns">
+			<div id="chart"></div>
+		</div>
+
+		<div class="line">
+			<hr>
+		</div>
+
+		<div class="eight columns"><img src=
+		"http://images.fineartamerica.com/images-medium-large/brooklyn-bridge-black-and-white-panorama-brooklyn-prints.jpg"></div>
+
+		<div class="eight columns">
+			<subheader class= "subheader1">
+			Brooklyn
+			</subheader>
+			<p>Brooklyn was a close second, having constructed 77,973 units
+			since 2000. Leading the way was North Side-South Side
+			(Wiiliamsburg) (9,115), followed by DUMBO-Vinegar Hill-Downtown
+			Brooklyn-Boerum Hill (6,987). Williamsburg has become a preferred
+			neighborhood choice among younger residents, and its historical
+			industrial fabric has been rapidly replaced by new residential
+			buildings. DUMBO meanwhile, has been transformed from a sleepy
+			industrial area to an expensive mixed use neighborhood with
+			desirable waterfront access, and Downtown Brooklyn has seen a
+			residential high rise building boom that has further densified the
+			area. Rounding out the top five were East New York (5,026), Bedford
+			(4,551), and Bushwick South (4,523).</p>
+		</div>
+
+		<div class="sixteen columns">
+			<div id="chart1"></div>
+		</div>
+
+		<div class="line">
+			<hr>
+		</div>
+
+		<div class="eight columns"><img src=
+		"http://images.fineartamerica.com/images-medium-large-5/the-unisphere-jc-findley.jpg"></div>
+
+		<div class="eight columns">
+			<subheader class= "subheader1">
+			Queens
+			</subheader>
+			<p>Queens was a distant third, having constructed 55,643 units
+			since 2000. Hunters Point-Sunnyside-West Maspeth constructed by far
+			the most residential units of any neighborhood (8,434). Hunters
+			Point accounted for the majority of the growth, having been a
+			recent beneficiary of a city rezoning of much of the area from
+			industrial to residential. The neighborhood was followed by
+			Flushing, whose large Chinese population has been an active player
+			in residential growth. Hammels-Arverne-Edgemere (3,150), Old
+			Astoria (2,432), and North Corona (2,364) round out the top
+			five.</p>
+		</div>
+
+		<div class="sixteen columns">
+			<div id="chart2"></div>
+		</div>
+
+		<div class="line">
+			<hr>
+		</div>
+
+		<div class="eight columns"><img src=
+		"http://images.fineartamerica.com/images-medium-large-5/new-york-skyline-from-bronx-dave-beckerman.jpg"></div>
+
+		<div class="eight columns">
+			<subheader class= "subheader1">
+			Bronx
+			</subheader>
+			<p>The Bronx has constructed 37,826 residential units since 2000.
+			The South Bronx neighborhoods of Morrisania-Melrose and Melrose
+			South-Mott Haven North constructed the most units (3,991 and 3,209,
+			respectively). City-owned properties that have been redeveloped
+			under an area Urban Renewal Plan have accounted for a large amount
+			of the growth in these neighborhoods. Rounding out the top five
+			were Williamsbridge-Olinville (2,429), East Tremont (2,347), and
+			Highbridge (2,307).</p>
+		</div>
+
+		<div class="sixteen columns">
+			<div id="chart3"></div>
+		</div>
+
+		<div class="line">
+			<hr>
+		</div>
+
+		<div class="eight columns"><img src=
+		"http://images.fineartamerica.com/images-medium-large-5/staten-island-ferry-in-black-and-white-rob-hans.jpg"></div>
+
+		<div class="eight columns">
+			<subheader class= "subheader1">
+			Staten Island
+			</subheader>
+			<p>Since 2000, 18,406 units have been constructed on Staten Island.
+			Charleston-Richmond Valley-Tottenville - at the southernmost end of
+			the island - led the way, with the construction of 2,236 units.
+			While the area is relatively far from the rest of NYC, it still
+			attracted several new large scale developments that accounted for
+			most of the growth. The neighborhood was followed by neighboring
+			Annadale-Huguenot-Prince's Bay-Eltingville, which constructed 1,621
+			units. Rounding out the top five were Rossville-Woodrow (1,470),
+			Mariner's Harbor-Arlington-Port Ivory-Graniteville (1,335), and
+			West New Brighton-New Brighton-St. George (1,324).</p>
+		</div>
+
+		<div class="sixteen columns">
+			<div id="chart4"></div>
+		</div>
+	</div><script src=
+	"http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> <script src=
+"https://rawgit.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script> <script charset="utf-8" src="http://d3js.org/d3.v3.min.js"></script> <script src="js/script.js"></script>
+</body>
+</html>
